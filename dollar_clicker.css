@@ -1,0 +1,105 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    display: flex;
+}
+
+.boutondollar
+{
+    height: 325px;
+    width: 70%;
+    background-image: url('dollar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0px white solid;
+}
+
+.buttondollarbox
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.afficher_resultat
+{
+    font-size: 4.5em;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.afficher_dollar_par_seconde
+{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+nav
+{
+    width: 25%;
+    max-height: 600px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+section
+{
+    width: 75%;
+    border: 2px black solid;
+    margin: 0 20px 0 20px;
+    flex-direction: column;
+}
+
+.bouton
+{
+    min-height: 100px;
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: space-between;
+}
+
+input
+{
+    background-color: rgb(223, 223, 223);
+    border: 0px;
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.stylebouton
+{
+    height: 40px;
+    width: 100px;
+}
+
+.boutoninvisible
+{
+    min-height: 100px;
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.bonus
+{
+    position: absolute;
+    top: 36%;
+    right: 30%;
+    font-size: 10em;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: red;
+}
