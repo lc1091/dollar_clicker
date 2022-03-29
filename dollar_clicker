@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Dollar Clicker</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  type="text/css" href="dollar_clicker.css">
+    </head>
+    <body>
+        <nav>
+            <div class="bouton" id="premierbouton">
+                <div>
+                    <p>$ / clic</p>
+                    <p id="dollarparclic"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdudollarparclic"></span></p>
+                <p>+1 $ / clic</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="dollarparclic()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="secondbouton">
+                <div>
+                    <p>Argent de poche</p>
+                    <p id="nombreargentdepoche"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutauto1"></span></p>
+                <p>0.5$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="argentdepoche()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="3bouton">
+                <div>
+                    <p>Baby sitting</p>
+                    <p id="nombredebabysitting"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutbaby"></span></p>
+                <p>2$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="babysitting()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="4bouton">
+                <div>
+                    <p>Vente de gateaux</p>
+                    <p id="nombredeventedegateaux"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixventedegateaux"></span></p>
+                <p>5$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="ventedegateaux()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="5bouton">
+                <div>
+                    <p>Vente de chaussures</p>
+                    <p id="nombredeventredechaussures"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutventechaussures"></span></p>
+                <p>10$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="ventechaussures()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="6bouton">
+                <div>
+                    <p>Vente de voiture</p>
+                    <p id="nombreventedevoiture"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutventevoiture"></span></p>
+                <p>25$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="ventevoiture()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="7bouton">
+                <div>
+                    <p>Vente de maison</p>
+                    <p id="nombredeventemaison"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutventedemaison"></span></p>
+                <p>50$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="ventemaison()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="8bouton">
+                <div>
+                    <p>Usine de gateaux</p>
+                    <p id="nombreusinedegateaux"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutusinedegateaux"></span></p>
+                <p>100$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="usinegateaux()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="9bouton">
+                <div>
+                    <p>Usine de chaussures</p>
+                    <p id="nombreusinedechaussures"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutusinechaussures"></span></p>
+                <p>200$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="usinechaussure()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="10bouton">
+                <div>
+                    <p>Usine de voiture</p>
+                    <p id="nombreusinevoiture"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutusinevoiture"></span></p>
+                <p>500$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="usinevoiture()" class="stylebouton">
+                </div>
+            </div>
+            <div class="bouton" id="11bouton">
+                <div>
+                    <p>Usine de maison (?!)</p>
+                    <p id="nombreusinedemaison"></p>
+                </div>
+                <div>
+                <p>Prix : <span id="prixdelajoutusinedemaison"></span></p>
+                <p>1000$ / s</p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="usinemaison()" class="stylebouton">
+                </div>
+            </div>
+            <div class="boutoninvisible">
+                <div>
+                    <p></p>
+                    <p id="nombredinfini"></p>
+                </div>
+                <div>
+                <p><span id="prixdelajoutinfini"></span></p>
+                <p></p>
+                </div>
+                <div>
+                <input type="button" value="Acheter" onclick="infini()" class="stylebouton">
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="buttondollarbox">
+            <input type="button" onclick="add()" class="boutondollar">
+            </div>
+            <p id="afficher_resultat" class="afficher_resultat"></p>
+            <p id="afficher_dollar_par_seconde" class="afficher_dollar_par_seconde"></p>
+        </section>
+        <div class="bonus" id="bonus"></div>
+        <script src="dollar_clicker.js"></script>
+    </body>
+</html>
